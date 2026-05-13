@@ -1,6 +1,6 @@
 # pi-axiom
 
-A [pi](https://shittycodingagent.ai) extension for querying [Axiom](https://axiom.co) logs, monitors, and debugging alerts — all from within your CLI agent.
+A [pi](https://pi.dev) extension for querying [Axiom](https://axiom.co) logs, monitors, and debugging alerts — all from within your CLI agent.
 
 ## Onboarding
 
@@ -13,7 +13,7 @@ pi install npm:pi-axiom
 
 **git (from a remote repository):**
 ```bash
-pi install git:github.com/<user>/pi-axiom@v1
+pi install git:github.com/benclmnt/pi-axiom
 ```
 
 **local path (development):**
@@ -32,7 +32,7 @@ In your [Axiom](https://axiom.co) dashboard, go to **Settings → API Tokens** a
 Run `/axiom-config` inside pi to paste your token, or set it as an environment variable:
 
 ```bash
-export AXIOM_TOKEN=xapt-...
+export AXIOM_TOKEN=xaat-...
 ```
 
 Optional — custom Axiom deployment URL:
@@ -67,8 +67,11 @@ Run `/axiom-config` again to confirm everything is working.
 ## Usage examples
 
 > "List my Axiom datasets."
+
 > "Run `['prod-logs'] | where level == 'error' | limit 20` for the last hour."
+
 > "List my monitors and inspect the payment-errors monitor."
+
 > "Debug why monitor `mon_XYZ` fired yesterday at 2pm."
 
 ## License
