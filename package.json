@@ -1,0 +1,23 @@
+{
+  "name": "pi-axiom",
+  "version": "0.1.0",
+  "description": "pi extension for querying Axiom logs, monitors, and debugging alerts",
+  "keywords": ["pi-package"],
+  "type": "module",
+  "main": "src/index.ts",
+  "files": ["src/", "README.md"],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "license": "MIT",
+  "author": "Bennett Clement",
+  "publishConfig": {
+    "access": "public"
+  }
+}
